@@ -30,7 +30,7 @@ if __name__ == "__main__":
     # print ("outstring: ", '_'.join(outstring)+'.py')
     destination_file_path = '_'.join(outstring)+'.py' #"BHplus_example_fragment_one.py"
     # gripack = "/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/g2HDM/cgbh/cgbh_H_M400_rhott01_rhotc01_rhotu00_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz"
-    replacement_string = "args = cms.vstring('"+opts.gridpack+"'),"
+    replacement_string = "args = cms.vstring('"+opts.gridpack.replace("\"", "") + "'),"
     print ("replacement_string: ", replacement_string)
 
     copy_and_replace(template_file_path, destination_file_path, replacement_string)

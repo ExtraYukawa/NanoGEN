@@ -24,7 +24,7 @@ def copy_and_replace(template_path, destination_path, gridpack):
     
     # Specify the line number to replace (assuming line number 17 in this example)
     line_number_to_replace = 17
-    replacement_text = "config.JobType.inputFiles = ['"+opts.gridpack+"']"
+    replacement_text = "config.JobType.inputFiles = ['" + opts.gridpack.replace("\"", "") + "']"
     # Replace the specified line with the replacement text
     lines[line_number_to_replace - 1] = replacement_text + '\n'
 
