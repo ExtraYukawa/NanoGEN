@@ -23,6 +23,7 @@ cd $CMSSW_BASE/src
 python produceNanoGEN.py --mkfiles
 ```
 This command will produce all necessary configuration files to run both locally and on CRAB
+
 ## To run job locally
 Use the command:
 ```cmsRun bgth(cgbh)_H_MX00_rhottX_rhotcX_rhotu00_cfg.py``` 
