@@ -20,7 +20,7 @@ config.section_("Data")
 config.Data.outputPrimaryDataset = 'cgbh_H_M400_rhott01_rhotc01_rhotu00'
 config.Data.splitting = 'EventBased'
 config.Data.unitsPerJob = 1000
-NJOBS = 20  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
+NJOBS = 50  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.outLFNDirBase = '/store/group/phys_b2g/ExYukawa/bHplus/NanoGEN_2017/'
 config.Data.publication = False
