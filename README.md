@@ -4,8 +4,8 @@
 
 ## Release CMSSW
 ```
-cmsrel CMSSW_12_4_8
-cd CMSSW_12_4_8/src
+cmsrel CMSSW_12_4_12
+cd CMSSW_12_4_12/src
 cmsenv
 scram b
 ```

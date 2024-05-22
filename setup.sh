@@ -6,3 +6,4 @@ mkdir ../crab_config
 cp make_crab_files.py ../crab_config/
 cp crabConfig_cgbh_H_M400_rhott01_rhotc01_rhotu00.py ../crab_config/
 cp produceNanoGEN.py ../
+cp check_crab_status.py ../
